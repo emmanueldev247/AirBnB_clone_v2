@@ -1,0 +1,10 @@
+.*.sw?
+*.pyc
+~*
+*.exe
+*.out
+.*
+*main.py
+fabfile.py
+__pycache__/
+versions/
