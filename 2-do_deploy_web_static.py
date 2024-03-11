@@ -60,6 +60,8 @@ def do_deploy(archive_path):
     if run("rm -rf {}/web_static/".format(uncmprs_path)).failed:
         return False
 
+    if run("rm -rf /data/web_static/current").failed:
+        return False
     if run("ln -sf {} /data/web_static/current".format(uncmprs_path)).failed:
         return False
     return True
